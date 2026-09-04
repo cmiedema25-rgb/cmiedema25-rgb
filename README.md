@@ -1,8 +1,8 @@
 # Charles Miedema
 
-### AI Automation • Python • LLM Evaluation • Workflow Engineering
+### AI Automation • Python • LLM Evaluation • Document AI • Agent Safety
 
-I build and evaluate practical AI and automation systems with a focus on reliability, clear architecture, and real-world implementation. My work includes Python automation, tool-using AI agents, API integrations, workflow orchestration, model-response evaluation, prompt testing, and adversarial evaluation.
+I build and evaluate practical AI and automation systems with a focus on reliability, clear architecture, and real-world implementation. My work includes Python automation, tool-using AI agents, API integrations, workflow orchestration, document extraction, model-response evaluation, prompt testing, and adversarial evaluation.
 
 I am especially interested in systems that connect language models to useful tools and business processes while remaining testable, observable, and safe to rerun.
 
@@ -10,31 +10,49 @@ I am especially interested in systems that connect language models to useful too
 
 - **AI & LLM Systems:** tool/function calling, agent orchestration, prompt and response evaluation, pairwise preference labeling, adversarial testing
 - **Automation Engineering:** resumable workflows, retries, checkpoints, idempotency, CLI tooling
+- **Document AI:** OCR-aware normalization, field extraction, provenance, validation
+- **Agent Safety:** prompt-injection defenses, capability allowlists, tamper-evident audit trails
 - **Python Development:** typed application code, modular architecture, testing, packaging
 - **API & Integration Engineering:** REST-style integrations, JSON, webhooks, HMAC signing, environment-based configuration
-- **Software Quality:** pytest, Ruff, GitHub Actions, CI, dependency injection, secure secret handling
+- **Software Quality:** pytest, Ruff, GitHub Actions, CI, secure secret handling
 
 ## Featured Projects
 
-### [AI Automation Toolkit](https://github.com/cmiedema25-rgb/ai-automation-toolkit2)
+### [LoadWatch](https://github.com/cmiedema25-rgb/loadwatch-shipment-exceptions)
 
-A production-style Python toolkit demonstrating dependable workflow automation, tool-using AI agents, and secure webhook integrations.
+Resumable shipment-exception triage for TMS exports: policy-based routing, auditable decision reports, checkpointed workflow stages, and signed webhook alerts.
 
-**Highlights:** resumable multi-step workflows, exponential-backoff retries, persistent checkpoints, AI-agent tool orchestration, HMAC-SHA256 webhook security, pytest, Ruff, and GitHub Actions CI on Python 3.11 and 3.12.
+**Highlights:** deterministic exception policy, atomic run state, HMAC-signed alerts, pytest, Ruff, and GitHub Actions CI on Python 3.11+.
 
-[![AI Automation Toolkit CI](https://github.com/cmiedema25-rgb/ai-automation-toolkit2/actions/workflows/ci.yml/badge.svg)](https://github.com/cmiedema25-rgb/ai-automation-toolkit2/actions/workflows/ci.yml)
+[![LoadWatch CI](https://github.com/cmiedema25-rgb/loadwatch-shipment-exceptions/actions/workflows/ci.yml/badge.svg)](https://github.com/cmiedema25-rgb/loadwatch-shipment-exceptions/actions/workflows/ci.yml)
 
 ### [LLM Evaluation & Alignment Lab](https://github.com/cmiedema25-rgb/llm-evaluation-alignment-lab)
 
-A Python evaluation lab for deterministic LLM scoring, prompt-regression testing, pairwise preference annotation, alignment-data export, and an optional LoRA fine-tuning pipeline.
+Deterministic LLM scoring, prompt-regression testing, pairwise preference annotation, alignment-data export, and an optional LoRA fine-tuning entry point.
 
-**Highlights:** NLP-style relevance analysis, behavioral prompt test cases, chosen/rejected preference records, reviewer-disagreement analysis, sample annotation datasets, optional Hugging Face/PEFT LoRA training code, pytest, Ruff, and GitHub Actions.
+**Highlights:** retained benchmark evidence, preference export, reviewer-disagreement analysis, pytest, Ruff, GitHub Actions.
 
 [![LLM Evaluation Lab CI](https://github.com/cmiedema25-rgb/llm-evaluation-alignment-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/cmiedema25-rgb/llm-evaluation-alignment-lab/actions/workflows/ci.yml)
 
+### [Document Intelligence Pipeline](https://github.com/cmiedema25-rgb/document-intelligence-pipeline)
+
+OCR-aware document classification and field extraction with provenance, arithmetic validation, CLI/HTTP API, and a strict TypeScript SDK.
+
+**Highlights:** layout-aware fixtures, retained benchmark report, Python + TypeScript CI, measurable precision/recall evidence.
+
+[![Document Intelligence CI](https://github.com/cmiedema25-rgb/document-intelligence-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/cmiedema25-rgb/document-intelligence-pipeline/actions/workflows/ci.yml)
+
+### [Secure Agent Runtime](https://github.com/cmiedema25-rgb/secure-agent-runtime)
+
+A zero-dependency security gateway for tool-using AI agents: injection detection, policy decisions, capability limits, and tamper-evident audit evidence.
+
+**Highlights:** 34-case red-team corpus, offline deterministic provider, HMAC audit chain, CodeQL + CI matrix.
+
+[![Secure Agent Runtime CI](https://github.com/cmiedema25-rgb/secure-agent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/cmiedema25-rgb/secure-agent-runtime/actions/workflows/ci.yml)
+
 ## Technologies
 
-`Python` · `OpenAI API` · `REST APIs` · `JSON` · `Webhooks` · `pytest` · `Ruff` · `GitHub Actions` · `Git` · `CI/CD` · `Transformers` · `PEFT/LoRA`
+`Python` · `TypeScript` · `OpenAI-compatible APIs` · `REST APIs` · `JSON` · `Webhooks` · `OCR/Document AI` · `pytest` · `Ruff` · `GitHub Actions` · `Git` · `CI/CD` · `Transformers` · `PEFT/LoRA`
 
 ## Engineering Approach
 
@@ -42,9 +60,9 @@ I prefer systems designed to survive failures rather than just succeed once. Tha
 
 ## Current Direction
 
-I am continuing to develop portfolio projects around AI automation, agent workflows, API integrations, LLM evaluation, preference data, prompt testing, and practical alignment workflows.
+I am continuing to develop portfolio projects around AI automation, agent workflows, API integrations, document intelligence, LLM evaluation, and practical agent-safety controls — with retained evidence a reviewer can re-run.
 
 ---
 
 **GitHub:** [cmiedema25-rgb](https://github.com/cmiedema25-rgb)  
-**Featured repositories:** [ai-automation-toolkit2](https://github.com/cmiedema25-rgb/ai-automation-toolkit2) · [llm-evaluation-alignment-lab](https://github.com/cmiedema25-rgb/llm-evaluation-alignment-lab)
+**Featured repositories:** [LoadWatch](https://github.com/cmiedema25-rgb/loadwatch-shipment-exceptions) · [LLM Evaluation Lab](https://github.com/cmiedema25-rgb/llm-evaluation-alignment-lab) · [Document Intelligence](https://github.com/cmiedema25-rgb/document-intelligence-pipeline) · [Secure Agent Runtime](https://github.com/cmiedema25-rgb/secure-agent-runtime)
